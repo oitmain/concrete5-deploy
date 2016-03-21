@@ -1,0 +1,16 @@
+# Download concrete 5.7.5.6
+
+@shell mkdir $MODULE/src
+@shell git -C $MODULE/src init
+@shell git -C $MODULE/src remote add origin https://github.com/concrete5/concrete5.git
+@shell git -C $MODULE/src fetch origin
+@shell git -C $MODULE/src checkout 5.7.5.6
+
+# Install concrete
+# Skip index.php as it may be customized
+
+@shell cp -rf $MODULE/src/web/application $PROJECT/
+@shell cp -rf $MODULE/src/web/concrete $PROJECT/
+@shell cp -rf $MODULE/src/web/packages $PROJECT/
+@shell cp -rf $MODULE/src/web/updates $PROJECT/
+@shell cp -rf $MODULE/src/web/robots.txt $PROJECT/
