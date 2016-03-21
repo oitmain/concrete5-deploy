@@ -7,8 +7,8 @@
 
 # Install concrete
 # Skip index.php as it may be customized
-@shell cp -rf $MODULE/src/web/application $PROJECT/html/
-@shell cp -rf $MODULE/src/web/concrete $PROJECT/html/
-@shell cp -rf $MODULE/src/web/packages $PROJECT/html/
-@shell cp -rf $MODULE/src/web/updates $PROJECT/html/
-@shell cp -rf $MODULE/src/web/robots.txt $PROJECT/html/
+@shell cp -rf $MODULE/src/web/application $PROJECT/
+@shell cp -rf $MODULE/src/web/concrete $PROJECT/
+@shell cp -rf $MODULE/src/web/packages $PROJECT/
+@shell cp -rf $MODULE/src/web/updates $PROJECT/
+@shell cp -rf $MODULE/src/web/robots.txt $PROJECT/
