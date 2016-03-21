@@ -1,10 +1,3 @@
-# Download concrete 5.7.5.6
-@shell rm -rf $MODULE/src
-@shell wget -qO- -O $MODULE/concrete5-5.7.5.6.zip https://github.com/oitmain/concrete5/archive/5.7.5.6.zip
-@shell unzip -qq -o $MODULE/concrete5-5.7.5.6.zip
-@shell mv $MODULE/concrete5-5.7.5.6 $MODULE/src
-@shell rm -rf $MODULE/concrete5*.zip
-
 # Install concrete
 # Skip index.php as it may be customized
 @shell cp -rf $MODULE/src/web/application $PROJECT/
